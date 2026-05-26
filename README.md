@@ -71,7 +71,7 @@ project/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/healthcare-system.git
+git clone https://github.com/BadamNagasree/Human-Health-care-System-.git
 cd healthcare-system
 pip install flask mysql-connector-python werkzeug
 python app.py

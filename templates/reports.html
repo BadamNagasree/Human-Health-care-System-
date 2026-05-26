@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{{ url_for('static', filename='reports.css') }}">
+    <title>Document</title>
+</head>
+<body>
+   
+
+<div class="report-container">
+
+    <h2>📊 Patient Health Report</h2>
+
+    <form method="POST" action="/update_report">
+
+        <label>Name</label>
+        <input type="text" value="{{ user[0] }}" disabled>
+
+        <label>Age</label>
+        <input type="number" name="age" value="{{ user[1] }}">
+
+        <label>Blood Pressure</label>
+        <input type="text" name="bp" value="{{ user[2] }}">
+
+        <label>Diseases</label>
+        <input type="text" name="diseases" value="{{ user[3] }}">
+
+        <label>Medicines</label>
+        <input type="text" name="medicines" value="{{ user[4] }}">
+
+        <button type="submit">Update Report</button>
+    </form>
+
+    <form method="POST" action="/delete_report">
+        <button class="delete-btn">Delete Account</button>
+    </form>
+
+    <a href="/dashboard"><button>← Back</button></a>
+
+</div>
+</body>
+</html>

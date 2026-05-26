@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>HealthCare</h2>
+
+        <a href="/dashboard">Dashboard</a>
+        <a href="/book">Book Appointment</a>
+        <a href="/appointments">My Appointments</a>
+        <a href="/reports">Reports</a>
+
+        {% if session['role'] == 'admin' %}
+        <hr>
+        <p class="admin-title">ADMIN PANEL</p>
+        <a href="/admin">⚙ Manage Doctors</a>
+        {% endif %}
+
+        <a href="/logout"> Logout</a>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <div class="topbar">
+            Welcome, {{ name }} 
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Book Appointment</h3>
+                <p>Schedule your visit with doctors</p>
+                <a href="/book">Open</a>
+            </div>
+
+            <div class="card">
+                <h3>My Appointments</h3>
+                <p>View & manage bookings</p>
+                <a href="/appointments">Open</a>
+            </div>
+
+            <div class="card">
+                <h3>sMedical Reports</h3>
+                <p>View your health records</p>
+                <a href="/reports">Open</a>
+            </div>
+
+            {% if session['role'] == 'admin' %}
+            <div class="card admin-card">
+                <h3>Admin Panel</h3>
+                <p>Manage doctors & system</p>
+                <a href="/admin">Open</a>
+            </div>
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

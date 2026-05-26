@@ -1,0 +1,459 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+
+/* Center form */
+.container {
+    width: 350px;
+    margin: 80px auto;
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #00c6ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0072ff;
+}
+
+/* Dashboard */
+.dashboard {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.card {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f2fe, #f8fafc, #dbeafe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e293b;
+}
+
+.page {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 460px;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 24px;
+    padding: 36px 30px;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.15);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.brand-badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #2563eb, #0ea5e9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.28);
+}
+
+.brand-name {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.brand-subtitle {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+.login-card h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+.subtitle {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #64748b;
+    margin-bottom: 24px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.25s ease;
+    color: #0f172a;
+}
+
+.input-group input::placeholder {
+    color: #94a3b8;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.input-group select {
+    appearance: none;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, transparent 50%, #64748b 50%),
+                      linear-gradient(135deg, #64748b 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1.1em),
+                         calc(100% - 15px) calc(1.1em);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+}
+
+button {
+    margin-top: 6px;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #2563eb, #0ea5e9);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.25s ease, opacity 0.2s ease;
+    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.24);
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 18px 34px rgba(37, 99, 235, 0.28);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.footer-text {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.footer-text a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 28px 20px;
+        border-radius: 20px;
+    }
+
+    .login-card h2 {
+        font-size: 26px;
+    }
+
+    .brand-badge {
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+    }
+}
+/* Appointments Page */
+.title {
+    text-align: center;
+    margin: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.appointment-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.spec {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.status {
+    color: green;
+    font-weight: bold;
+}
+
+.btn-danger {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.back-btn {
+    display: block;
+    margin: 20px auto;
+}
+/* Layout */
+.layout {
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #2f3542;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.sidebar a:hover {
+    background: #57606f;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    background: #f1f2f6;
+    padding: 20px;
+}
+
+/* Topbar */
+.topbar {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+/* ===== DASHBOARD PRO UI ===== */
+/* ===== CLEAN MODERN DASHBOARD ===== */
+
+.dashboard-body {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: white;
+}
+
+/* Layout */
+.dashboard-body .layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.dashboard-body .sidebar {
+    width: 260px;
+    background: linear-gradient(180deg, #020617, #0f172a);
+    padding: 30px 20px;
+    box-shadow: 4px 0 30px rgba(0,0,0,0.6);
+}
+
+.dashboard-body .sidebar h2 {
+    color: #38bdf8;
+    margin-bottom: 40px;
+}
+
+.dashboard-body .sidebar a {
+    display: block;
+    padding: 12px;
+    margin-bottom: 10px;
+    color: #cbd5f5;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.dashboard-body .sidebar a:hover {
+    background: rgba(56,189,248,0.2);
+    color: #38bdf8;
+    transform: translateX(5px);
+}
+
+/* Main */
+.dashboard-body .main {
+    flex: 1;
+    padding: 40px;
+}
+
+/* Topbar */
+.dashboard-body .topbar {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(12px);
+}
+
+/* Cards */
+.dashboard-body .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+.dashboard-body .card {
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 18px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.dashboard-body .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.dashboard-body .card h3 {
+    color: #38bdf8;
+}
+
+.dashboard-body .card p {
+    color: #cbd5f5;
+}
+
+/* Buttons */
+.dashboard-body .card a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2563eb, #0ea5e9);
+    color: white;
+    text-decoration: none;
+}

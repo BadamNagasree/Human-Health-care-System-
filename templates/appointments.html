@@ -1,0 +1,47 @@
+\<!DOCTYPE html>
+<html>
+<head>
+    <title>My Appointments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='appointments.css') }}?v=3">
+</head>
+
+<body>
+
+<div class="appointments-container">
+
+    <h2 class="title">My Appointments</h2>
+
+    <div class="grid">
+        {% for a in appointments %}
+        <div class="appointment-card">
+
+            <h3>{{ a[1] }}</h3>
+            <p class="spec">{{ a[2] }}</p>
+
+            <div class="details">
+                <p><b>Date:</b> {{ a[3] }}</p>
+
+                <!-- ✅ DYNAMIC STATUS -->
+                <p class="status {{ a[4]|lower }}">
+                    {{ a[4] }}
+                </p>
+            </div>
+
+            <form action="/cancel/{{ a[0] }}" method="POST">
+                <button class="btn-danger">Cancel Appointment</button>
+            </form>
+
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="back-btn">
+        <a href="/dashboard">
+            <button>← Back to Dashboard</button>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

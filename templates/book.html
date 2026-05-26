@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='book.css') }}">
+</head>
+<body  class="appointments-container">
+
+<div class="container">
+    <h2>Book Appointment</h2>
+
+    <form method="POST">
+        <label>Doctor</label>
+        <select name="doctor">
+            {% for doctor in doctors %}
+            <option value="{{ doctor[0] }}">{{ doctor[1] }} - {{ doctor[2] }}</option>
+            {% endfor %}
+        </select>
+
+        <label>Date</label>
+        <input type="date" name="date">
+
+        <button type="submit">Book</button>
+    </form>
+
+    <a href="/dashboard">Back</a>
+</div>
+
+</body>
+</html>

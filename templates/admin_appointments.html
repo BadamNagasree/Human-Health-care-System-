@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Appointments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+</head>
+
+<body>
+
+<div class="admin-main">
+
+    <h2>All Appointments</h2>
+
+    {% for a in appointments %}
+        <div class="admin-card">
+            <p><b>Patient:</b> {{ a[1] }}</p>
+            <p><b>Doctor:</b> {{ a[2] }}</p>
+            <p><b>Date:</b> {{ a[3] }}</p>
+            <p><b>Status:</b> {{ a[4] }}</p>
+        </div>
+    {% endfor %}
+
+</div>
+
+</body>
+</html>
